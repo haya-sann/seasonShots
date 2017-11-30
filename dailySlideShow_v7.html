@@ -16,7 +16,7 @@ JSで新規にTextnodeを作ってそこを経由して情報交換しようと�
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
     <script type="text/javascript" src="./assets/js/datepicker-ja.js"></script>
-    <!--script type="text/javascript" src="./assets/js/jquery.ui.touch-punch.min.js"></script-->
+    <script type="text/javascript" src="./assets/js/jquery.ui.touch-punch.min.js"></script>
     <script src="https://use.fontawesome.com/a87ac8a19a.js"></script>
 
   </head>
@@ -26,11 +26,11 @@ JSで新規にTextnodeを作ってそこを経由して情報交換しようと�
         <div class="pure-u-1 title">
           <a href="./index.html" class="button_home"><i class="fa fa-home fa-lg"></i></a> 柏たなかスライドショー 田んぼの成長記録（v7）
         </div>
-        <div class="pure-u-3-5">
+        <div class="pure-u-12-24">
           <label>日付で検索</label>
           <input name="showDate" class="datepicker" type="text" onChange="searchDate()" >
         </div>
-        <div class="pure-u-2-5">
+        <div class="pure-u-12-24">
           <label>時刻で横切</label>
           <select name="showHour" id="showHour" onChange="getFileListHourly()">
             <option value="選択">選択</option>
@@ -45,10 +45,11 @@ JSで新規にTextnodeを作ってそこを経由して情報交換しようと�
         
       </nav>
       <div class="pure-g">
-        <div class="slideshow pure-u">
-          <img src="./img/solarCamera.jpg" id="imageArea" alt="写真表示エリア"/>
-          <div id="button_start"></div>
-          <div id="timeStamp">［タイムスタンプ表示エリア］</div>
+        <div class="slideshow pure-u" style="background-image:url(./img/solarCamera.jpg);">
+          <div class="slideshow-widget">
+            <div id="button_start"></div>
+            <div id="timeStamp">［タイムスタンプ表示エリア］</div>
+          </div>
         </div>
       </div>
       <div class="pure-g">

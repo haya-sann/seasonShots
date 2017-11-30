@@ -39,9 +39,8 @@ function init(arg_data){
 }
 
 function renderFrame() {
-  console.log(sliderPadding)
   $("#timeStamp").html(fileList[currentFrame].dateString);
-  $("#imageArea").attr('src', dir + fileList[currentFrame].fileName);
+  $(".slideshow").css('background-image', 'url(' + dir + fileList[currentFrame].fileName + ')');
 }
 
 
@@ -49,13 +48,12 @@ function renderFrame() {
 function togglePlay(){
   if (!playing){
     startSlideShow();
-    playing = true;
   }else{
     stopSlideShow();
-    playing = false;
   }
 }
 function startSlideShow() {
+  playing = true;
   $("#button_start").addClass("stop");
   runSlideShow();
 }
@@ -70,6 +68,7 @@ function runSlideShow() {
   slideShowInterval = setTimeout("runSlideShow()", intTime);
 }
 function stopSlideShow() {
+  playing = false;
   $("#button_start").removeClass("stop");
   clearTimeout(slideShowInterval);
 }

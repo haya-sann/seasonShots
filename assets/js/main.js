@@ -1,4 +1,4 @@
-var dir = 'daily_timelapse/';
+var dir = './daily_timelapse/';
 var intTime = 500;
 var intMax = 1000;
 var intMin = 10;
@@ -11,10 +11,10 @@ var sliderPadding = 6;
 $(function(){
   $(".datepicker").datepicker({
     onClose: function(dateText, inst) { 
-        $(this).attr("disabled", false);
+      $(this).attr("disabled", false);
     },
     beforeShow: function(input, inst) {
-        $(this).attr("disabled", true);
+      $(this).attr("disabled", true);
     }
   });
   $("#slider").slider({
