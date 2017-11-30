@@ -9,15 +9,14 @@ var currentFrame = 0;
 var sliderPadding = 6;
 
 $(function(){
-  $(".datepicker").datepicker(
-    showOn: 'button',
+  $(".datepicker").datepicker({
     onClose: function(dateText, inst) { 
         $(this).attr("disabled", false);
     },
     beforeShow: function(input, inst) {
         $(this).attr("disabled", true);
     }
-  );
+  });
   $("#slider").slider({
     values: [0,0,0],
     slide: function( event, ui ) {
