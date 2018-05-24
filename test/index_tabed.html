@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<title>CSS だけで作るタブ切替ユーザインタフェース サンプル | WWW WATCH</title>
+<meta name="viewport" content="width=640px" />
+
+<style>
+/* ここはメニューには直接関係ない基本スタイル */
+body {
+background: #fff;
+color: #333;
+font-family: sans-serif;
+font-size: small;
+line-height: 1.5;
+margin: 0;
+padding: 0;
+}
+
+a {
+color: #22aacc;
+text-decoration: underline;
+}
+
+a:visited {
+color: #009999;
+}
+
+a:hover,
+a:active {
+color: #ff3366;
+text-decoration: underline;
+}
+
+.siteTitle {
+background: #000;
+font-size: 1em;
+height: 100px;
+margin: 0;
+overflow: hidden;
+padding: 10px;
+text-align: center;
+}
+
+.backEntry {
+background: #eee;
+border: 1px solid #ccc;
+border-radius: 10px;
+margin: 1em auto;
+padding: 2px 0;
+text-align: center;
+width: 15em;
+}
+
+.backEntry a {
+display: block;
+}
+
+article {
+padding: 0 1em 50px;
+}
+
+h1 {
+font-size: 1em;
+}
+
+.entry-title {
+font-size: 1.2em;
+}
+
+/* ここからサンプルのスタイル */
+
+.sample {
+margin: 20px auto;
+width: 450px;
+}
+
+.sample ul#tab {
+list-style: none;
+margin: 0;
+overflow: hidden;
+padding: 0;
+width: 100%;
+}
+
+.sample ul#tab li {
+border: 1px solid #333;
+border-bottom: none;
+display: inline-block;
+margin: 0 0 0 .5em;
+padding: 0;
+text-align: center;
+}
+
+.sample ul#tab li a {
+display: block;
+padding: .2em 2em;
+}
+
+.sample .contents {
+position: relative;
+}
+
+.sample .contents div {
+background: #fff;
+margin: 0;
+padding: 0;
+position: absolute;
+top: 0;
+}
+
+.sample .contents div section {
+border: 1px solid #333;
+margin-bottom: 20px;
+padding: 1em;
+}
+
+.sample .contents div h1 {
+border-bottom: 1px dotted #333;
+margin-bottom: 1em;
+padding-bottom: .5em;
+}
+
+.sample .contents div p {
+margin-bottom: 1em;
+}
+
+.sample #tab a:hover {
+background: #333;
+color: #fff;
+-webkit-transition: background .5s;
+transition: background .5s;
+}
+
+/* タブの表示切替関連 */
+
+.sample .contents div {
+z-index: 1;
+opacity: 0;
+}
+
+.sample #tab li:first-child a {
+background: #333;
+color: #fff;
+}
+
+.sample .contents div:first-child {
+opacity: 1;
+z-index: 2;
+}
+
+.sample #tab01:target .contents .tab01,
+.sample #tab02:target .contents .tab02,
+.sample #tab03:target .contents .tab03 {
+opacity: 1;
+-webkit-transition: opacity .5s;
+transition: opacity .5s;
+z-index: 2;
+}
+
+.sample #tab01:target .contents div:not([class="tab01"]),
+.sample #tab02:target .contents div:not([class="tab02"]),
+.sample #tab03:target .contents div:not([class="tab03"]) {
+opacity: 0;
+-webkit-transition: opacity .5s;
+transition: opacity .5s;
+z-index: 1;
+}
+
+.sample #tab01:target #tab li a[href$="tab01"],
+.sample #tab02:target #tab a[href$="tab02"],
+.sample #tab03:target #tab a[href$="tab03"] {
+background: #333;
+color: #fff;
+-webkit-transition: background .5s;
+transition: background .5s;
+}
+
+.sample :not([id="tab01"]):target #tab li a[href$="tab01"] {
+background: #fff;
+color: #22aacc;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1 class="siteTitle"><img src="img/kawagoe_project.jpg" height = 100px alt="かわごえプロジェクト" /></h1>
+</header>
+
+
+<article>
+
+<h1 class="entry-title">かわごえプロジェクト定点観測撮影データビューア</h1>
+
+</article>
+
+<!-- ↓ここからサンプル↓ -->
+<div class="sample">
+
+<div id="tab01">
+<div id="tab02">
+<div id="tab03">
+
+<!-- ↓タブ↓ -->
+<ul id="tab">
+<li><a href="#tab01">W3C</a></li>
+<li><a href="#tab02">XHTML</a></li>
+<li><a href="#tab03">CSS</a></li>
+</ul>
+<!-- ↑タブ↑ -->
+
+<div class="contents">
+
+<!-- ↓タブ 1 の内容↓ -->
+<div class="tab01">
+<section>
+<h1>World Wide Web Consortium</h1>
+<p>The World Wide Web Consortium (W3C) is the main international standards organization for the World Wide Web (W3). It is arranged as a consortium where member organizations maintain full-time staff for the purpose of working together in the development of standards for the W3. As of March 2007, the W3C had 441 members. It is always open for new organizations to join.</p>
+<p>W3C also engages in education and outreach, develops software and serves as an open forum for discussion about the Web.</p>
+<p>The Consortium is headed by Sir Tim Berners-Lee, the primary author of the original URL (Uniform Resource Locator), HTTP (HyperText Transfer Protocol) and HTML (HyperText Markup Language) specifications, the principal technologies that form the basis of the World Wide Web.</p>
+<p>From Wikipedia, the free encyclopedia</p>
+</section>
+</div>
+<!-- ↑タブ 1 の内容↑ -->
+
+<!-- ↓タブ 2 の内容↓ -->
+<div class="tab02">
+<section>
+<h1>XHTML</h1>
+<p>The Extensible HyperText Markup Language, or XHTML, is a markup language that has the same depth of expression as HTML, but also conforms to XML syntax.</p>
+<p>Whereas HTML is an application of SGML, a very flexible markup language, XHTML is an application of XML, a more restrictive subset of SGML. Because they need to be well-formed, true XHTML documents allow for automated processing to be performed using standard XML tools—unlike HTML, which requires a relatively complex, lenient, and generally custom parser. XHTML can be thought of as the intersection of HTML and XML in many respects, since it is a reformulation of HTML in XML. XHTML 1.0 became a World Wide Web Consortium (W3C) Recommendation on January 26, 2000. XHTML 1.1 became a W3C recommendation on May 31, 2001.</p>
+<p>From Wikipedia, the free encyclopedia</p>
+</section>
+</div>
+<!-- ↑タブ 2 の内容↑ -->
+
+<!-- ↓タブ 3 の内容↓ -->
+<div class="tab03">
+<section>
+<h1>Cascading Style Sheets</h1>
+<p>In web development, Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in a markup language. Its most common application is to style web pages written in HTML and XHTML, but the language can be applied to any kind of XML document, including SVG and XUL.</p>
+<p>CSS is used by both the authors and readers of web pages to define colors, fonts, layout, and other aspects of document presentation. It is designed primarily to enable the separation of document content (written in HTML or a similar markup language) from document presentation (written in CSS). This separation can improve content accessibility, provide more flexibility and control in the specification of presentational characteristics, and reduce complexity and repetition in the structural content. CSS can also allow the same markup page to be presented in different styles for different rendering methods, such as on-screen, in print, by voice (when read out by a speech-based browser or screen reader) and on Braille-based, tactile devices. CSS specifies a priority scheme to determine which style rules apply if more than one rule matches against a particular element. In this so-called cascade, priorities or weights are calculated and assigned to rules, so that the results are predictable.</p>
+<p>The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998).</p>
+<p>From Wikipedia, the free encyclopedia</p>
+</section>
+</div>
+<!-- ↑タブ 3 の内容↑ -->
+
+<!-- .contents --></div>
+
+</div>
+</div>
+</div>
+
+<!-- .sample --></div>
+<!-- ↑ここまでサンプル↑ -->
+
+</body>
+</html>

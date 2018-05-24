@@ -1,0 +1,49 @@
+
+<html>
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <title>写真の圧縮</title>
+</head>
+<script>
+$(function() {
+    var $updateInputs = $("#update-data-form").find("input");
+    
+    $updateInputs.on("click", function() {
+        //var result = confirm( "サーバー側の写真をコンバートしますか？" );
+        //    if(result){
+                var $this = $(this); 
+                $.ajax({
+                type: "POST",
+                url: "../loadThumbPhotos.php",
+                data: {
+                    id: $this.attr("id")
+                },
+                success: function(html) {
+                    alert(html);
+                    $this.val("更新完了");
+                    location.reload();
+                },
+                error: function(html){
+                    alert(html);
+                    $this.val("更新失敗 !!!");
+                }
+                })
+                
+        //    }else{
+        //        console.log(" CANCEL が押された");
+        //    }
+        
+   });
+});
+</script>
+<body>
+    このプログラムは、高速にスライドショーを動かすために連続撮影した写真を中、小のサイズのサムネールを作成するためのものです
+        <form id="update-data-form">
+                <input type="button" value="写真のコンバート（サムネール作成）" id="photoConvert" />
+            </form>
+
+</body>
+</html>

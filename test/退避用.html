@@ -1,0 +1,21 @@
+$(function(){
+  var $this = $(this);
+  $.ajax({
+      type: "POST",
+      url: "countFiles.php",
+//        data:{ id: $this.attr("id") },
+      success: function(response){
+          counter++;
+          programStatus = counter + "回目のPHP呼出しに成功しました";
+          document.getElementById("Message").innerHTML = programStatus;
+          target=document.getElementById("ConvertedFiles");
+          fileCount = (response);
+          target.innerHTML = fileCount;
+      },
+      error: function(response){
+          target=document.getElementById("ConvertedFiles");
+          fileCount = (response);
+          target.innerHTML = fileCount;
+      }
+  })
+});

@@ -1,0 +1,2 @@
+DirectoryIndex index.html
+AddHandler application/x-httpd-php php5.5-script .htm .html

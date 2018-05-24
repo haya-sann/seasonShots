@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <meta charset='utf-8'>
+<!-- 下記サイトにあった例
+http://
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <title>Kawagoe SATOYAMA-リアルタイムクロックの作例</title>
+    <style>
+		div.slideshow1 { margin: 10px auto 10px auto; font-size: 30pt; color:blue; }
+		div.slideshow2 { color: red; margin: 10px auto; font-size: 44pt;}
+		h1 {text-align: center; font-family: Verdana; font-size: 18pt; 	border-bottom: 10px solid; font-weight: bold; color: #000; margin: 0; }
+</style>
+<script>
+    function set2fig(num) {
+    // 桁数が1桁だったら先頭に0を加えて2桁に調整する
+    var ret;
+    if( num < 10 ) { ret = "0" + num; }
+    else { ret = num; }
+    return ret;
+ }
+
+var status = "今は何もしていません";
+
+document.onkeydown = keydown;
+function keydown() {
+    status = "オッ！！　今、キーが押されましたよ。KeyCodeは" + event.keyCode;
+    document.getElementById("Message").innerHTML = status;
+}
+
+
+
+function showClock2() {
+    var nowTime = new Date();
+    var nowHour = set2fig( nowTime.getHours() );
+    var nowMin  = set2fig( nowTime.getMinutes() );
+    var nowSec  = set2fig( nowTime.getSeconds() );
+    var msg = "現在時刻は、" + nowHour + ":" + nowMin + ":" + nowSec + " です。";
+    document.getElementById("RealtimeClockArea1").innerHTML = msg;
+    document.getElementById("RealtimeClockArea2").innerHTML = msg;
+//    document.write('<script type= "text/javascript" src="//camera.hkose.com/test/countFiles.php" /script>');
+
+$(function(){
+    var $this = $(this);
+    $.ajax({
+        type: "POST",
+        url: "countFiles.php",
+//        data:{ id: $this.attr("id") },
+        success: function(response){
+            counter++;
+            programStatus = counter + "回目のPHP呼出しに成功しました";
+            document.getElementById("Message").innerHTML = programStatus;
+            target=document.getElementById("ConvertedFiles");
+            fileCount = (response);
+            target.innerHTML = fileCount;
+        },
+        error: function(response){
+            target=document.getElementById("ConvertedFiles");
+            fileCount = (response);
+            target.innerHTML = fileCount;
+        }
+
+    })
+
+});
+
+
+}
+ setInterval('showClock2()',5000);
+ counter =0; //カウンターのイニシャライズ
+
+</script>
+ 
+    </head>
+        <body>
+            <div class="slideshow2">ファイルカウントまではできた！！</div>
+            <div class="slideshow3">これにサムネール作成のPHPプログラムを組み込めばいいんじゃね？</div>
+
+    <h1 id="RealtimeClockArea1">
+    ここはh1エリアなのですが。すぐ時計表示と置き換わってしまいます
+    </h1>
+
+    <p id="RealtimeClockArea2">※ここに時計(2桁固定版)が表示されます。</p>
+
+    <p id="Message">※状態表示を出します</p>
+    <div id="ConvertedFiles"></div>
+    <div id="programStatus"></div>
+
+        </body>
+</html>
