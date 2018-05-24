@@ -22,18 +22,12 @@ http://
     else { ret = num; }
     return ret;
  }
-    function dateFormat(){
+    function dateFormat(nowTime){
         var nowHour = set2fig( nowTime.getHours() );
         var nowMin  = set2fig( nowTime.getMinutes() );
         var nowSec  = set2fig( nowTime.getSeconds() );
         return "時刻は、" + nowHour + ":" + nowMin + ":" + nowSec + " です。";
     }
-
-var status = "今は何もしていません";
-var startTime = new Date();
-var comment = "動作開始時刻は、" + dateFormat(startTime) + " です。";
-
-document.getElementById("comment_1").innerHTML = comment;
 
 document.onkeydown = keydown;
 function keydown() {
@@ -56,16 +50,11 @@ $(function(){
 //        data:{ id: $this.attr("id") },
         success: function(response){
             counter++;
-            programStatus = counter + "回目のPHP呼出しに成功しました";
-            document.getElementById("Message").innerHTML = programStatus;
-            target=document.getElementById("ConvertedFiles");
-            fileCount = (response);
-            target.innerHTML = fileCount;
+            document.getElementById("Message").innerHTML = counter + "回目のPHP呼出しに成功しました";
+            document.getElementById("ConvertedFiles").innerHTML = (response);
         },
         error: function(response){
-            target=document.getElementById("ConvertedFiles");
-            fileCount = (response);
-            target.innerHTML = fileCount;
+            document.getElementById("ConvertedFiles").innerHTML = (response);
         }
 
     })
@@ -74,8 +63,16 @@ $(function(){
 
 
 }
- setInterval('showClock2()',5000);
- counter =0; //カウンターのイニシャライズ
+setInterval('showClock2()',5000);
+counter =0; //カウンターのイニシャライズ
+
+status = "今は何もしていません";
+startTime = new Date();
+comment = "動作開始時刻は、" + dateFormat(startTime) + " です。";
+
+document.getElementById("comment_1").innerHTML = "動作開始時刻表示エリアです。";
+//document.getElementById("comment_1").innerHTML = comment;
+
 
 </script>
  
@@ -85,7 +82,7 @@ $(function(){
             <div class="slideshow3">これにサムネール作成のPHPプログラムを組み込めばいいんじゃね？</div>
 
     <h1 id="RealtimeClockArea1">
-    ここはh1エリアなのですが。すぐ時計表示と置き換わってしまいます
+    ここはh1エリア。すぐに時計表示に切り替わります
     </h1>
 
     <p id="comment_1">※ここに現在の状態が表示されます。</p>
