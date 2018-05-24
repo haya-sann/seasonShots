@@ -1,4 +1,6 @@
 <?php
+//header('Content-type: text/javascript; charset=utf-8');
+
 $searchFiles = '../daily_timelapse/*.jpg';
 $iterator = new GlobIterator($searchFiles);
 print ("Counting files in ".$searchFiles."<br>");
