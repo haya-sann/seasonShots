@@ -1,8 +1,8 @@
 <?php echo "<h1>電源投入時テスト画像一覧　　<button type='button' onclick='history.back()'>トップページに戻る</button></h1>";
 $reqDate = $_POST['showdate'];
 
-  foreach(glob(rtrim("./daily_timelapse/電源投入時テスト_".$reqDate."*.jpg")) as $file) {
-    $result[] = $file;
+foreach(glob(rtrim("./daily_timelapse/_lg/電源投入時テスト_".$reqDate."*.jpg")) as $file) {
+  $result[] = $file;
 }
 $numberOfPictures = count($result);
 echo "<!DOCTYPE html><html><head><meta charset='utf-8'>";
