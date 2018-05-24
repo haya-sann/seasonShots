@@ -8,7 +8,7 @@ http://
 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <title>Kawagoe SATOYAMA-リアルタイムクロックの作例</title>
+    <title>Kawagoe SATOYAMA-dailyTimelapse 内の写真点数</title>
     <style>
 		div.slideshow1 { margin: 10px auto 10px auto; font-size: 30pt; color:blue; }
 		div.slideshow2 { color: red; margin: 10px auto; font-size: 44pt;}
@@ -22,8 +22,18 @@ http://
     else { ret = num; }
     return ret;
  }
+    function dateFormat(){
+        var nowHour = set2fig( nowTime.getHours() );
+        var nowMin  = set2fig( nowTime.getMinutes() );
+        var nowSec  = set2fig( nowTime.getSeconds() );
+        return "時刻は、" + nowHour + ":" + nowMin + ":" + nowSec + " です。";
+    }
 
 var status = "今は何もしていません";
+var startTime = new Date();
+var comment = "動作開始時刻は、" + dateFormat(startTime) + " です。";
+
+document.getElementById("comment_1").innerHTML = comment;
 
 document.onkeydown = keydown;
 function keydown() {
@@ -35,12 +45,7 @@ function keydown() {
 
 function showClock2() {
     var nowTime = new Date();
-    var nowHour = set2fig( nowTime.getHours() );
-    var nowMin  = set2fig( nowTime.getMinutes() );
-    var nowSec  = set2fig( nowTime.getSeconds() );
-    var msg = "現在時刻は、" + nowHour + ":" + nowMin + ":" + nowSec + " です。";
-    document.getElementById("RealtimeClockArea1").innerHTML = msg;
-    document.getElementById("RealtimeClockArea2").innerHTML = msg;
+    document.getElementById("RealtimeClockArea1").innerHTML = dateFormat(nowTime);
 //    document.write('<script type= "text/javascript" src="//camera.hkose.com/test/countFiles.php" /script>');
 
 $(function(){
@@ -83,7 +88,7 @@ $(function(){
     ここはh1エリアなのですが。すぐ時計表示と置き換わってしまいます
     </h1>
 
-    <p id="RealtimeClockArea2">※ここに時計(2桁固定版)が表示されます。</p>
+    <p id="comment_1">※ここに現在の状態が表示されます。</p>
 
     <p id="Message">※状態表示を出します</p>
     <div id="ConvertedFiles"></div>
