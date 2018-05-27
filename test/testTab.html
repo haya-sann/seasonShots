@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset='utf-8'>
+    <!--
+        http://alphasis.info/2011/05/jquery-ui-tabs/
+        の解説を参考に作り直した
+        });
+    // -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <title>かわごえプロジェクト　総合ページ</title>
+    <script type="text/javascript">  
+    <!--
+        $( function() {
+            $( '#tabs' ) . tabs();
+        });
+    // -->
+    </script>
+    </head>
+        <body>
+        <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">メニュー 1</a></li>
+        <li><a href="#tabs-2">メニュー 2</a></li>
+        <li><a href="#tabs-3">メニュー 3</a></li>
+    </ul>
+    <div id="tabs-1">
+        <p>メニュー 1 の内容。</p>
+        <p>この実装例の、jQuery UI の CSS テーマは、デフォルトのテーマを読み込んで使っている。もちろん他の CSS テーマにも対応しているので、色々試してみるといい。</p>
+    </div>
+    <div id="tabs-2">
+        <p>メニュー 2 の内容。</p>
+    </div>
+    <div id="tabs-3">
+        <p>メニュー 3 の内容。</p>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <meta charset='utf-8'>
+<!-- 下記サイトにあった例
+http://tmbb.web.fc2.com/boots/index5.html
+-->
+    <title>BootStrap サンプル2</title>
+
+<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+<link rel="stylesheet" href="https://blueimp.github.io/Bootstrap-Image-Gallery/css/bootstrap-image-gallery.min.css">
+</head>
+
+    </head>
+    
+        <body>
+    <div id="links">
+  <a href="img/大きな画像1.jpg" title="1 大きな画像の名前" data-gallery>
+    <img src="img/小さな画像1.jpg" width="200" height="150" alt="1 サムネイル" />
+  </a>
+  <a href="img/大きな画像2.jpg" title="2 大きな画像の名前" data-gallery>
+    <img src="img/小さな画像2.jpg" width="200" height="150" alt="2 サムネイル" />
+  </a>
+  <a href="img/大きな画像3.jpg" title="3 大きな画像の名前" data-gallery>
+    <img src="img/小さな画像3.jpg" width="200" height="150" alt="3 サムネイル" />
+  </a>
+  <a href="img/大きな画像4.jpg" title="4 大きな画像の名前" data-gallery>
+    <img src="img/小さな画像4.jpg" width="200" height="150" alt="4 サムネイル" />
+  </a>
+  <a href="img/大きな画像5.jpg" title="5 大きな画像の名前" data-gallery>
+    <img src="img/小さな画像5.jpg" width="200" height="150" alt="5 サムネイル" />
+  </a>
+  <a href="img/大きな画像6.jpg" title="6 大きな画像の名前" data-gallery>
+    <img src="img/小さな画像6.jpg" width="200" height="150" alt="6 サムネイル" />
+  </a>
+</div>
+
+    <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="https://blueimp.github.io/Bootstrap-Image-Gallery/js/bootstrap-image-gallery.min.js"></script>
+        </body>
+
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+  <!-- The container for the modal slides -->
+  <div class="slides"></div>
+  <!-- Controls for the borderless lightbox -->
+  <h3 class="title"></h3>
+  <a class="prev">‹</a>
+  <a class="next">›</a>
+  <a class="close">×</a>
+  <a class="play-pause"></a>
+  <ol class="indicator"></ol>
+  <!-- The modal dialog, which will be used to wrap the lightbox content -->
+  <div class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" aria-hidden="true">×</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body next"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left prev">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Previous
+          </button>
+          <button type="button" class="btn btn-primary next">
+            Next
+            <i class="glyphicon glyphicon-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+</html>

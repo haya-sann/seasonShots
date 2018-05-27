@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name = "viewport" content="width = 400">
+<style>
+    /* Datepicker のフォントサイズを小さくする */
+    div.ui-datepicker {
+        font-size: 70%;
+    }
+    #dummy {
+        height:10px;
+    }
+</style>
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/ui-lightness/jquery-ui.css">
+<title>営業時間内の撮影データを表示</title>
+</head>
+<body>
+    <h3>営業時間内撮影画像を閲覧</h3>
+
+  <div class="inputDate" id = "myDate"> <form action="showDailyPicts.php" method="post" <label for ="showdate"> 表示したい日付を指定：</label>
+    <br>
+    <input name="showdate" id="datepicker" type="text" value="<?php echo date('Ymj');?>"/>
+    <input type="submit" name="display" value="写真表示">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script>
+      (function(){
+  $("#datepicker").datepicker({ 
+    dateFormat: 'yymmdd',
+    monthNames: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+    dayNames: ['日', '月', '火', '水', '木', '金', '土'],
+    dayNamesMin: ['日', '月', '火', '水', '木', '金', '土']
+  });
+})();
+    </script>
+</body>
+</html>

@@ -1,4 +1,3 @@
-
 var intTime = 500;
 var intMax = 1000;
 var intMin = 100;
