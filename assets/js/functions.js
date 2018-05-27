@@ -105,6 +105,7 @@ function getFileListByDate(dateString){
   console.log(filteredList);
   currentIndex = filteredList[0].index;
   currentFrame = 0;
+
   setSliderRange();
   renderFrame();
 }
@@ -118,16 +119,20 @@ function getFileListHourly(){
   console.log("Filtered by hour: " + val, filteredList);
   currentIndex = filteredList[0].index;
   currentFrame = 0;
+
   setSliderRange();
 }
 function adjustFilterRange(){
   var slider_range_min = $("#slider-range").slider("values", 0);
   var slider_range_max = $("#slider-range").slider("values", 1);
+
   if($("#showHour").val().length){
-    filteredList = fileList.all().slice(slider_range_min, slider_range_max).filterByHour($("#showHour").val());
+    
+    filteredList = fileList.all().slice(slider_range_min, slider_range_max+1).filterByHour($("#showHour").val());
   }else{
-    filteredList = fileList.all().slice(slider_range_min, slider_range_max);
+    filteredList = fileList.all().slice(slider_range_min, slider_range_max+1);
   }
+
   for(i=0; i < filteredList.length; i++){
     if(filteredList[i].index == currentIndex){
       currentFrame = i;
@@ -142,6 +147,7 @@ function adjustFilterRange(){
   }
   if(typeof(filteredList[0]) != "undefined"){
     //DISPLAY PLAYBACK RANGE
+    
     $(".range-start span").html(filteredList[0].dateString);
     $(".range-end span").html(filteredList[filteredList.length-1].dateString);
 
@@ -229,8 +235,9 @@ function stopSlideShow() {
 /* - - -  S L I D E R  S T U F F  - - - */
 function setSliderRange(){
   var filteredList_cached = filteredList.slice(); //CACHE THE LIST SO IT WON'T CHANGE ITS VALUES WHEN SLIDER UPDATES
-  $("#slider-range").slider("values",0,filteredList_cached[0].index).slider("values",1,filteredList_cached[filteredList_cached.length-1].index)
-  $("#slider").slider("values",0,filteredList_cached[currentFrame].index);
+  $("#slider-range").slider("values",0,filteredList_cached[0].index)
+  $("#slider-range").slider("values",1,filteredList_cached[filteredList_cached.length-1].index);
+  //$("#slider").slider("values",0,filteredList_cached[currentFrame].index);
   currentFrame = 0;
   setSliderRangeBackground();
 }
