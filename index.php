@@ -126,7 +126,7 @@ font-size:140%;
   7分以内であれば、正時の撮影時間を待ちます。
 </>
 <h2>現地の気象データ</h2>
-<a href=<? $site ?> +"/IM/im_build/sandBox_2.html">現地の気象データ</a>
+<a href="<?=$site ?>/IM/im_build/sandBox_2.html">現地の気象データ</a>
 
 <br><br>
     お気付きの不都合などがありましたら、<br>
