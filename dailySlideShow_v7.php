@@ -23,7 +23,7 @@
     <div id="main-wrapper">      
       <nav class="pure-g pure-form">
         <div class="pure-u-8-24 title">
-          <a href="./index.html" class="button_home">
+          <a href="./index.php" class="button_home">
             <i class="fa fa-home fa-lg"></i>
             <br/>トップページ
           </a>
