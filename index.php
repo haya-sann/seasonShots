@@ -54,7 +54,7 @@ font-size:140%;
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
-<title>かわごえプロジェクト　総合ページ</title>
+<title>かわごえプロジェクト　総合ページ ２号機用</title>
 
 
 </head>
@@ -71,6 +71,10 @@ font-size:140%;
 <td><a href="img/koufukumai.jpg"><img src="img/koufukumai.jpg" height =140 alt=""></td>
 <td><a href="img/raspCam.jpg"><img src="img/raspCam.jpg" height =140 alt=""></td></div>
 </tr> </table>
+
+<h2>【新機能】現地の気象データ</h2>
+<a href="<?=$site ?>/IM/index.html">現地の気象データ</a>　／　
+<a href="https://ambidata.io/ch/channel.html?id=999">現地の気象データグラフ表示</a> 
 
  <form action="showDailyPicts.php" method="post"
       <label><h2>日付別撮影データ閲覧</h2> 表示したい日付を指定：</label>
@@ -90,12 +94,12 @@ font-size:140%;
 収録写真を閲覧します。日にちを指定して過去の写真も確認できます。
 1日分の撮影済み写真が一覧できます。<br>
 
-<h2><a href="dailySlideShow_v7.php">【2018年版】かわごえ里山成長記録スライドショー-New!!</a><p></h2>
+<h2><a href="dailySlideShow_v7.php">【2018年版-２号機】かわごえ里山成長記録スライドショー-New!!</a><p></h2>
   <p>
     2016年8月18日から撮影し続けた写真をスライドショーで閲覧します。<br>表示方法を工夫し、現在はバージョン７のブラウザが動作しています｡
   </>
 <p>
-スライドショーを開くと、最新の1日分をスライド表示できます。下部のスライドバーで表示開始日・最終日を指定して、日付から最終日まで同一時刻の写真を並べた「横切り」タイムラプス画像を確認することができます。</p>
+スライドショーを開くと、最新の1日分をスライド表示できます。下部のスライドバーで表示開始日・最終日を指定してします。指定の日付から最終日まで同一時刻の写真を「横切り」タイムラプス画像を確認することができます。</p>
 <p>動作中でも日付や時刻指定は変更できます｡リアルタイムに反映されます｡</p>
 
 <p>モバイル通信ネットワークなど、スピードが遅い環境で使っていると写真の表示が追いつかず、撮影時刻表示と同期しないという不都合がおきることがあります｡画像の送出間隔を変更できるようにしてありますので、お使いください。<br>
@@ -125,8 +129,6 @@ font-size:140%;
   5時から19時までの営業時間内に電源投入、次回の撮影時（正時）までに8分以上間隔があれば、テスト撮影します。<br>
   7分以内であれば、正時の撮影時間を待ちます。
 </>
-<h2>現地の気象データ</h2>
-<a href="<?=$site ?>/IM/index.html">現地の気象データ</a>
 
 <br><br>
     お気付きの不都合などがありましたら、<br>
