@@ -1,2 +1,1 @@
-RewriteEngine on
-RewriteRule ^index.html$ index.php [L,R=301] 
+Redirect permanent /index.html/ https://ciao-kawagoesatoyama.ssl-lolipop.jp/seasonShots/index.php
