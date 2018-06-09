@@ -17,7 +17,7 @@
     if(in_array($ext, array("jpg","jpeg","png","gif"))){
       if(!file_exists($thumbdir . $fileName)){
         
-        $org_img = imagecreatefromjpeg( $photo_dir . $fileName);
+        $org_img = imagecreatefromjpeg( $photo_dir_Sandbox . $fileName);
         imagejpeg($org_img, $largedir . $fileName);
 
         $thumb_img = imagescale($org_img, $thumb_h);
@@ -29,7 +29,7 @@
         imagedestroy($med_img);
         
         imagedestroy($org_img);
-        unlink($photo_dir . $fileName);
+        unlink($photo_dir_Sandbox . $fileName);
 
         echo 'Converted: ' . $fileName;
         die();
