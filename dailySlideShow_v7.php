@@ -23,11 +23,12 @@
     <div id="main-wrapper">      
       <nav class="pure-g pure-form">
         <div class="pure-u-8-24 title">
-          <a href="./index.html" class="button_home">
+          <a href="./index.php" class="button_home">
             <i class="fa fa-home fa-lg"></i>
             <br/>トップページ
           </a>
           <p><?=$title ?></p>
+          <a href="/IM/index.html">気象データ</a>／<a href="https://ambidata.io/ch/channel.html?id=999">グラフ</a>
         </div>
         <div class="pure-u-8-24">
           <label>日付で検索</label>
