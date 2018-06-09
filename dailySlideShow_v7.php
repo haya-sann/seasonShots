@@ -28,7 +28,7 @@
             <br/>トップページ
           </a>
           <p><?=$title ?></p>
-          <a href="<?=$site ?>/IM/index.html">気象データ</a>／<a href="https://ambidata.io/ch/channel.html?id=999">グラフ</a>
+          <a href="/IM/index.html">気象データ</a>／<a href="https://ambidata.io/ch/channel.html?id=999">グラフ</a>
         </div>
         <div class="pure-u-8-24">
           <label>日付で検索</label>
