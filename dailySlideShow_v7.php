@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/ui-lightness/jquery-ui.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css?p=22234566">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
@@ -52,7 +52,9 @@
         <div class="slideshow pure-u" style="background-image:url(./img/solarCamera.jpg);">
           <div class="slideshow-widget">
             <div id="button_start"></div>
-            <div id="timeStamp">［タイムスタンプ表示エリア］</div>
+
+            <div id="timeStamp">［タイムスタンプ表示エリア］</div><br/>
+            <div id="button_magnifier"></div>
           </div>
           <div class="loading">
             <div class="dot a"></div>

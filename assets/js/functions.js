@@ -43,6 +43,7 @@ function init(arg_data){
 
     //setToday();
     $("#button_start").click(togglePlay);
+    $("#button_magnifier").click(showFullSizePhoto);
 
     renderFrame();
   }
@@ -188,9 +189,16 @@ function preload(load_index) {
   }
 }
 
+var photo_fullsize = '';
 function renderPhoto(arg_index) {
   $("#timeStamp").html(fileList[arg_index].dateString);
   $(".slideshow").css('background-image', 'url(./' + fileList[arg_index].dir_thumb + fileList[arg_index].fileName + ')');
+  photo_fullsize = './' + fileList[arg_index].dir_full+ fileList[arg_index].fileName;
+}
+function showFullSizePhoto(){
+  if(photo_fullsize != ''){
+    window.open(photo_fullsize);
+  }
 }
 
 

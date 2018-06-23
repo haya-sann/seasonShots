@@ -4,28 +4,12 @@ div {
   box-sizing: border-box;
 }
 body {
-<<<<<<< HEAD
-  background-color:#ccc;
-}
-#main-wrapper {
-  margin:auto;
-  /* max-width:1024px; */
-  background-color: #fff;
-}
-div.title {
-  margin-bottom:0;
-  border-top:1px solid #ccc;
-  border-bottom:1px solid #ccc;
-  line-height:2em;
-}
-=======
   background-color:#fff;
 }
 #main-wrapper {
   margin:auto;
   background-color: #fff;
 }
->>>>>>> ef73900da3f8a5f615872dae3f956f088ae53d33
 div.slideshow {
   position: relative;
   width:100%;
@@ -45,8 +29,6 @@ div.slideshow .slideshow-widget {
   top:1%;
   left:1%;
 }
-<<<<<<< HEAD
-=======
 div.slideshow .loading {
   position: absolute;
   width:100%;
@@ -100,7 +82,6 @@ div.slideshow .loading .d {
   100% {opacity:0;}
 }
 
->>>>>>> ef73900da3f8a5f615872dae3f956f088ae53d33
 #timeStamp{
   display: inline-block;
   text-align: left;
@@ -112,27 +93,26 @@ div.slideshow .loading .d {
   display: inline-block;
   width:60px;
   height:60px;
-<<<<<<< HEAD
-  background-image:url('../../start.png');
-=======
   background-image:url('../img/start.png');
->>>>>>> ef73900da3f8a5f615872dae3f956f088ae53d33
+  background-size:100% auto;
+  cursor:pointer;
+  vertical-align: middle;
+}
+#button_magnifier{
+  display: inline-block;
+  width:60px;
+  height:60px;
+  background-image:url('../img/magnifier.png');
   background-size:100% auto;
   cursor:pointer;
   vertical-align: middle;
 }
 #button_start.stop {
-<<<<<<< HEAD
-  background-image:url('../../stop.png');
-=======
   background-image:url('../img/stop.png');
->>>>>>> ef73900da3f8a5f615872dae3f956f088ae53d33
 }
 
 nav > div {
   padding:0.5%;
-<<<<<<< HEAD
-=======
   border-left:1px solid #ccc;
 }
 div.title {
@@ -143,7 +123,6 @@ div.title p {
   margin:4px 0;
   font-size:16px;
   line-height:1.2em;
->>>>>>> ef73900da3f8a5f615872dae3f956f088ae53d33
 }
 label {
   margin-top:0 !important;
@@ -151,15 +130,6 @@ label {
   font-size:0.8em;
 }
 .button_home {
-<<<<<<< HEAD
-  background-color:#ccc;
-  width:1.5em;
-  text-align:center;
-  color:#666;
-  border-radius:6px;
-  float:right;
-  font-size:1.5em;
-=======
   display: inline-block;
   background-color:#ccc;
   text-align:center;
@@ -176,7 +146,6 @@ label {
 .button_home .fa {
   font-size:32px;
   line-height:32px;
->>>>>>> ef73900da3f8a5f615872dae3f956f088ae53d33
 }
 
 div#id_fileList{
@@ -185,10 +154,7 @@ div#id_fileList{
     display:none;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> ef73900da3f8a5f615872dae3f956f088ae53d33
 .ui-content {
     width:500px;
     position:absolute;
@@ -196,38 +162,6 @@ div#id_fileList{
     left:20px;
 }
 
-<<<<<<< HEAD
-#slider-wrapper {
-  padding:0.5%;
-  border-bottom:1px solid #ccc;
-}
-#slider {
-  margin:0 0.6em;
-  border-radius: 0;
-}
-#slider-gauge {
-  font-size:9px;
-  padding:0 1px 10px 1px;
-}
-#slider-gauge .end{
-  float:right;
-}
-#custom-range {
-  background-color:#ffb300;
-}
-#custom-handle-min, #custom-handle-max {
-  top:-.5em;
-  width:0.6em;
-  height:1.6em;
-}
-#custom-handle-min {
-  margin-left: -.6em;
-  border-radius: 4px 0 0 4px;
-}
-#custom-handle-max {
-  margin-left: 0em;
-  border-radius: 0 4px 4px 0;
-=======
 #slider-wrapper, #slider-wrapper-range {
   position: relative;
   padding:10px 0;
@@ -282,25 +216,11 @@ div#id_fileList{
 #custom-handle-max {
   border-radius: 0 6px 6px 0;
   margin-left:0;
->>>>>>> ef73900da3f8a5f615872dae3f956f088ae53d33
 }
 
 #speed {
   padding:0.5%;
 }
-<<<<<<< HEAD
-#speed > i {
-  width:4%;
-  color:#666;
-}
-#speed > i:nth-of-type(1){
-  text-align:right;
-}
-#speed > div{
-  display:inline-block;
-  width:90%;
-  margin:0 1%;
-=======
 #speed label{
   font-size:10px;
 }
@@ -325,7 +245,6 @@ div#id_fileList{
   display:inline-block;
   width:calc(100% - 3em);
   margin:0 .2em;
->>>>>>> ef73900da3f8a5f615872dae3f956f088ae53d33
 }
 
 /* FIXES */
@@ -338,8 +257,6 @@ div#id_fileList{
 div#ui-datepicker-div.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
   background-position: center top -18px;
 }
-<<<<<<< HEAD
-=======
 
 
 @media screen and (orientation:portrait) {
@@ -348,4 +265,4 @@ div#ui-datepicker-div.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearf
   }
 }
 
->>>>>>> ef73900da3f8a5f615872dae3f956f088ae53d33
+
