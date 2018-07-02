@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/ui-lightness/jquery-ui.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css?p=22234566">
 
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
@@ -23,12 +23,11 @@
     <div id="main-wrapper">      
       <nav class="pure-g pure-form">
         <div class="pure-u-8-24 title">
-          <a href="./index.php" class="button_home">
+          <a href="./index.html" class="button_home">
             <i class="fa fa-home fa-lg"></i>
             <br/>トップページ
           </a>
           <p><?=$title ?></p>
-          <a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/IM/index.html">気象データ</a>／<a href="https://ambidata.io/ch/channel.html?id=999">グラフ</a>
         </div>
         <div class="pure-u-8-24">
           <label>日付で検索</label>
@@ -52,9 +51,7 @@
         <div class="slideshow pure-u" style="background-image:url(./img/solarCamera.jpg);">
           <div class="slideshow-widget">
             <div id="button_start"></div>
-
-            <div id="timeStamp">［タイムスタンプ表示エリア］</div><br/>
-            <div id="button_magnifier"></div>
+            <div id="timeStamp">［タイムスタンプ表示エリア］</div>
           </div>
           <div class="loading">
             <div class="dot a"></div>
