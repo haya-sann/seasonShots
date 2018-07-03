@@ -72,12 +72,12 @@ font-size:140%;
 <td><a href="img/raspCam.jpg"><img src="img/raspCam.jpg" height =140 alt=""></td></div>
 </tr> </table>
 
-<h2>【新機能】現地の気象データ（２号機で収集）</h2>
+<h2>【新機能】現地の気象データ（２号機で収集中）</h2>
 <a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/IM/index.html">現地の気象データ</a>　／　
 <a href="https://ambidata.io/ch/channel.html?id=999">現地の気象データグラフ表示</a> 
 
  <form action="showDailyPicts.php" method="post"
-      <label><h2>日付別撮影データ閲覧</h2> 表示したい日付を指定：</label>
+      <label><h2>２号機：日付別撮影データ閲覧</h2> 表示したい日付を指定：</label>
     <input name="showdate" id="datepicker" type="text" />
     <input type="submit" name="display" value="写真表示"></form>
  <script>
@@ -110,7 +110,7 @@ font-size:140%;
 <br><br>
 
 <form action="showCapturedPicts.php" method="post"
-      <label><h2>電源投入時テスト撮影</h2> 表示したい日付を指定：</label>
+      <label><h2>２号機：電源投入時テスト撮影</h2> 表示したい日付を指定：</label>
     <input name="showdate" id="datepicker2" type="text" />
     <input type="submit" name="display" value="写真表示"></form>
 
