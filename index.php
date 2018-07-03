@@ -63,7 +63,7 @@ font-size:140%;
 <table  class = "imageHeader">
 <tr>
   <div class = "tableTitle_1" id = "top_title"><p><h2>「東洋大学情報総合学部・かわごえ里山イニシアチブ」<br>太陽電池駆動IoTによる田んぼウオッチ協働プロジェクト</></div>
-   かわごえ福田のみんなの田んぼ。一緒に見守ってください</p>
+   かわごえ福田のみんなの田んぼ。一緒に見守ってください。（これは２号機用のトップページ）</p>
 <div class = "titleImage" >
 <td><a href="img/solarCamera_1.jpg "><img src="img/solarCamera_1.jpg" height =140 alt=""></a></td>
 <td><a href="img/install_system.jpg"><img src="img/install_system.jpg" height =140 alt=""></td>
