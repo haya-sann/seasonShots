@@ -105,7 +105,7 @@ font-size:140%;
 <p>モバイル通信ネットワークなど、スピードが遅い環境で使っていると写真の表示が追いつかず、撮影時刻表示と同期しないという不都合がおきることがあります｡画像の送出間隔を変更できるようにしてありますので、お使いください。<br>
 画面下にあるスライダーを左右に動かして、再生速度を変えてください｡300ミリ秒から2000ミリ秒まで指定できます。再生中に操作すると表示速度がリアルタイムに変化します。</p>
 
-<img src="./img/instructions.jpg" style="max-width:100%;" />
+<img src="./img/instructions.jpg" style="max-width:60%;" />
 
 <br><br>
 
@@ -132,7 +132,7 @@ font-size:140%;
 
 <br><br>
     お気付きの不都合などがありましたら、<br>
-    <a href="mailto:kawagoe_IoT@googlegroups.com">kawagoe_IoT@googlegroups.com</a> <br>
+    <a href="mailto:tamboiot@googlegroups.com">tamboiot@googlegroups.com</a> <br>
     にメールをお送りください｡<br>
   </>
 </body>
