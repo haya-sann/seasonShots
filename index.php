@@ -72,14 +72,15 @@ font-size:140%;
 <td><a href="img/raspCam.jpg"><img src="img/raspCam.jpg" height =140 alt=""></td></div>
 </tr> </table>
 
-<h2>【新機能】現地の気象データ（２号機で収集中）</h2>
-<a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/IM/index.html">現地の気象データ</a>　／　
-<a href="https://ambidata.io/ch/channel.html?id=999">現地の気象データグラフ表示</a> 
+<h2>【新機能】現地の気象データ（２号機で収集。現在最終調整中）</h2>
+
+<!-- <a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/IM/index.html">現地の気象データ</a>　／　 -->
+<!-- <a href="https://ambidata.io/ch/channel.html?id=999">現地の気象データグラフ表示</a> 
 
  <form action="showDailyPicts.php" method="post"
       <label><h2>２号機：日付別撮影データ閲覧</h2> 表示したい日付を指定：</label>
     <input name="showdate" id="datepicker" type="text" />
-    <input type="submit" name="display" value="写真表示"></form>
+    <input type="submit" name="display" value="写真表示"></form> -->
  <script>
       (function(){
   $("#datepicker").datepicker({
@@ -93,8 +94,9 @@ font-size:140%;
 
 収録写真を閲覧します。日にちを指定して過去の写真も確認できます。
 1日分の撮影済み写真が一覧できます。<br>
-<h2><a href="http://camera.hkose.com/dailySlideShow_v7.php">【2018年版-1号機】かわごえ里山マコモ田-成長記録スライドショー-New!!</a><p>
-<a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/seasonShots/dailySlideShow_v7.php">【2018年版-２号機】かわごえ里山耕福米-成長記録スライドショー-New!!</a><p></h2>
+<h2><a href="http://camera.hkose.com/dailySlideShow_v7.php">【2019年版-1号機】かわごえ里山耕福米-成長記録スライドショー</a><p>
+<!-- <a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/seasonShots/dailySlideShow_v7.php">
+【２号機】現在最終調整中</a><p></h2> -->
   <p>
     2016年8月18日から撮影し続けた写真をスライドショーで閲覧します。<br>表示方法を工夫し、現在はバージョン７のブラウザが動作しています｡
   </>
