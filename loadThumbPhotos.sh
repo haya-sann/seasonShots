@@ -1,1 +1,1 @@
-curl http://camera.hkose.com/loadThumbPhotos.php
+curl https://camera.hkose.com/loadThumbPhotos.php
