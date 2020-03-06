@@ -23,6 +23,19 @@ font-size:140%;
 .bunner {
   height: 10px;
 }
+
+.notice-border{
+  padding: 10px; 
+  margin-bottom: 10px; 
+  border: 3px 
+  dashed #333333;
+}
+
+.small-label{
+  background: #006dd9;
+  padding: 3px  10px;
+  color: #fff;
+}
     /* Datepicker のフォントサイズを小さくする */
     div.ui-datepicker {
         font-size: 70%;
@@ -47,23 +60,22 @@ font-size:140%;
             document.getElementById("datepicker2").value=String(y)+String(m)+String(d);
         }
 
-
 </script>
 
 <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/ui-lightness/jquery-ui.css">
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
-<title>かわごえプロジェクト　総合ページ ２号機用</title>
-
+<title>かわごえプロジェクト　総合ページ</title>
 
 </head>
 <body onload="pDate()">
 
 <table  class = "imageHeader">
 <tr>
-  <div class = "tableTitle_1" id = "top_title"><p><h2>「東洋大学情報総合学部・かわごえ里山イニシアチブ」<br>太陽電池駆動IoTによる田んぼウオッチ協働プロジェクト</></div>
-   かわごえ福田のみんなの田んぼ。一緒に見守ってください。（これは２号機用のトップページ）</p>
+  <div class = "tableTitle_1" id = 
+"top_title"><p><h2>「東洋大学情報総合学部・かわごえ里山イニシアチブ」<br>太陽電池駆動IoTによる田んぼウオッチ協働プロジェクト</></div>
+   かわごえ福田のみんなの田んぼ。一緒に見守ってください。</p>
 <div class = "titleImage" >
 <td><a href="img/solarCamera_1.jpg "><img src="img/solarCamera_1.jpg" height =140 alt=""></a></td>
 <td><a href="img/install_system.jpg"><img src="img/install_system.jpg" height =140 alt=""></td>
@@ -72,15 +84,20 @@ font-size:140%;
 <td><a href="img/raspCam.jpg"><img src="img/raspCam.jpg" height =140 alt=""></td></div>
 </tr> </table>
 
-<h2>【新機能】現地の気象データ（２号機で収集。現在最終調整中）</h2>
 
-<!-- <a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/IM/index.html">現地の気象データ</a>　／　 -->
-<!-- <a href="https://ambidata.io/ch/channel.html?id=999">現地の気象データグラフ表示</a> 
+<h2>【お知らせ】現在、2020年のプロジェクト始動準備中です</h2>
+<h4>１号機は台風にともなう洪水で冠水、修復中。２号機は新機能搭載のための昨日追加のため新規開発中です。</h4>
+
+<div class="notice-border" >
+<span class="small-label">過去のデータはこちらから閲覧可能です。</span>
+<h2>【新機能】現地の気象データ（２号機で収集）</h2>
+<a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/IM/index.html">現地の気象データ</a>　／　
+<a href="https://ambidata.io/ch/channel.html?id=999">現地の気象データグラフ表示</a> 
 
  <form action="showDailyPicts.php" method="post"
-      <label><h2>２号機：日付別撮影データ閲覧</h2> 表示したい日付を指定：</label>
+      <label><h2>１号機日付別定時撮影データ閲覧</h2> 表示したい日付を指定：</label>
     <input name="showdate" id="datepicker" type="text" />
-    <input type="submit" name="display" value="写真表示"></form> -->
+    <input type="submit" name="display" value="写真表示"></form>
  <script>
       (function(){
   $("#datepicker").datepicker({
@@ -94,11 +111,17 @@ font-size:140%;
 
 収録写真を閲覧します。日にちを指定して過去の写真も確認できます。
 1日分の撮影済み写真が一覧できます。<br>
-<h2><a href="http://camera.hkose.com/dailySlideShow_v7.php">【2019年版-1号機】かわごえ里山耕福米-成長記録スライドショー</a><p>
-<!-- <a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/seasonShots/dailySlideShow_v7.php">
-【２号機】現在最終調整中</a><p></h2> -->
-  <p>
-    2016年8月18日から撮影し続けた写真をスライドショーで閲覧します。<br>表示方法を工夫し、現在はバージョン７のブラウザが動作しています｡
+
+<h2><a href="dailySlideShow_v7.php">【2018年版-1号機】かわごえ里山マコモ田-成長記録スライドショー-New!!</a><p>
+<a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/seasonShots/dailySlideShow_v7.php">【2018年版-２号機】かわごえ里山耕福米-成長記録スライドショー-New!!</a><p></h2>
+
+</div>
+
+
+
+<p>
+    
+2016年8月18日から撮影し続けた写真をスライドショーで閲覧します。<br>表示方法を工夫し、現在はバージョン７のブラウザが動作しています｡
   </>
 <p>
 スライドショーを開くと、最新の1日分をスライド表示できます。下部のスライドバーで表示開始日・最終日を指定してします。指定の日付から最終日まで同一時刻の写真を「横切り」タイムラプス画像を確認することができます。</p>
@@ -139,3 +162,4 @@ font-size:140%;
   </>
 </body>
 </html>
+
