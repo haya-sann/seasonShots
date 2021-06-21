@@ -1,3 +1,5 @@
+[ciao.jp-kawagoesatoyama@users434 seasonShots]$ cat index.php 
+<!-- /home/users/0/ciao.jp-kawagoesatoyama/web/seasonShots -->
 <?php include('config.php'); ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -85,16 +87,18 @@ font-size:140%;
 </tr> </table>
 
 
-<h2>【お知らせ】現在、2020年のプロジェクト始動準備中です</h2>
+<h2>【お知らせ】現在、2021年のプロジェクト始動準備中です</h2>
 <h4>１号機は2019年10月の台風19号（令和元年東日本台風）にともなう洪水で冠水、修復中。２号機は新機能追加のため新規開発中です。</h4>
 
 <div class="notice-border" >
 <span class="small-label">過去のデータはこちらから閲覧可能です。</span>
-<h2>【新機能】現地の気象データ（２号機で収集）</h2>
+<h2>【新機能-現在開発中】現地の気象データ（２号機-開発中）</h2>
 <a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/IM/index.html">現地の気象データ</a>　／　
-<a href="https://ambidata.io/ch/channel.html?id=999">現地の気象データグラフ表示</a> 
 
- <form action="showDailyPicts.php" method="post"
+<a href="https://ambidata.io/bd/board.html?id=26890">
+現地の気象データグラフ表示</a> 
+
+ <form action="https://camera.hkose.com/showDailyPicts.php" method="post"
       <label><h2>１号機日付別定時撮影データ閲覧</h2> 表示したい日付を指定：</label>
     <input name="showdate" id="datepicker" type="text" />
     <input type="submit" name="display" value="写真表示"></form>
@@ -112,7 +116,8 @@ font-size:140%;
 収録写真を閲覧します。日にちを指定して過去の写真も確認できます。
 1日分の撮影済み写真が一覧できます。<br>
 
-<h2><a href="dailySlideShow_v7.php">【2018年版-1号機】かわごえ里山マコモ田-成長記録スライドショー-New!!</a><p>
+<h2><a 
+href="https://camera.hkose.com/dailySlideShow_v7.php">【2020年版-1号機】かわごえ里山スライドショー＊＊再開テスト中＊＊</a><p>
 <a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/seasonShots/dailySlideShow_v7.php">【2018年版-２号機】かわごえ里山耕福米-成長記録スライドショー-New!!</a><p></h2>
 
 </div>
@@ -134,8 +139,8 @@ font-size:140%;
 
 <br><br>
 
-<form action="showCapturedPicts.php" method="post"
-      <label><h2>２号機：電源投入時テスト撮影</h2> 表示したい日付を指定：</label>
+<form action="https://camera.hkose.com/showCapturedPicts.php" method="post"
+      <label><h2>１号機：電源投入時テスト撮影</h2> 表示したい日付を指定：</label>
     <input name="showdate" id="datepicker2" type="text" />
     <input type="submit" name="display" value="写真表示"></form>
 
@@ -162,4 +167,3 @@ font-size:140%;
   </>
 </body>
 </html>
-
