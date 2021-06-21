@@ -1,4 +1,4 @@
-daily_timelapse/
+/daily_timelapse/
 config.php
-config.sample.php
-daily_timelapseSandbox/
+#config.sample.php
+/daily_timelapseSandbox/
