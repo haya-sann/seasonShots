@@ -1,4 +1,3 @@
-[ciao.jp-kawagoesatoyama@users434 seasonShots]$ cat index.php 
 <!-- /home/users/0/ciao.jp-kawagoesatoyama/web/seasonShots -->
 <?php include('config.php'); ?>
 <!DOCTYPE html>
