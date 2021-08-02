@@ -50,7 +50,7 @@
         
       </nav>
       <div class="pure-g">
-        <div class="slideshow pure-u" style="background-image:url(./img/solarCamera.jpg);">
+        <div class="slideshow pure-u" style="background-image:url(./img/riceField.jpg);">
           <div class="slideshow-widget">
             <div id="button_start"></div>
 
