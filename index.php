@@ -78,27 +78,33 @@ font-size:140%;
 "top_title"><p><h2>「東洋大学情報総合学部・かわごえ里山イニシアチブ」<br>太陽電池駆動IoTによる田んぼウオッチ協働プロジェクト</></div>
    かわごえ福田のみんなの田んぼ。一緒に見守ってください。</p>
 <div class = "titleImage" >
-<td><a href="img/solarCamera_1.jpg "><img src="img/solarCamera_1.jpg" height =140 alt=""></a></td>
+<td><a href="img/riceField.jpg"><img src="img/riceField.jpg" height =140 alt=""></td>
+<td><a href="img/solarCamera.jpg "><img src="img/solarCamera.jpg" height =140 alt=""></a></td>
 <td><a href="img/install_system.jpg"><img src="img/install_system.jpg" height =140 alt=""></td>
-<td><a href="img/members.jpg"><img src="img/members.jpg" height =140 alt=""></td>
 <td><a href="img/koufukumai.jpg"><img src="img/koufukumai.jpg" height =140 alt=""></td>
 <td><a href="img/raspCam.jpg"><img src="img/raspCam.jpg" height =140 alt=""></td></div>
 </tr> </table>
 
 
-<h2>【お知らせー2021/07/22】現在、2021年の機材据付中</h2>
-<h4>１号機は2019年10月の台風19号（令和元年東日本台風）にともなう洪水で冠水、修復中。２号機は新機能追加のため新規開発中です。</h4>
+<h2>【お知らせー2021/08/01】2号機再稼働始めました</h2>
+<h4>１号機は2019年10月の台風19号（令和元年東日本台風）にともなう洪水で冠水、修復中。２号機は水深計などを追加しました。</h4>
 
 <div class="notice-border" >
-<span class="small-label">過去のデータはこちらから閲覧可能です。</span>
-<h2>【新機能-現在開発中】現地の気象データ（２号機-開発中）</h2>
+<span class="small-label">【2号機の新機能】現地の気象データに水田の水深が表示されるようになりました</span><p>
 <a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/IM/index.html">現地の気象データ</a>　／　
 
 <a href="https://ambidata.io/bd/board.html?id=26890">
 現地の気象データグラフ表示</a> 
+<p>
+  <h2>
+<a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/seasonShots/dailySlideShow_v7.php">【2021年版-２号機】かわごえ里山耕福米-成長記録スライドショー-New!!</a>
+<p></h2>
+スライドショーの写真は高速化のため荒くしてあります。<br>
+細部を見るためには［虫眼鏡］アイコンをクリックしてください。<p>
 
+<span class="small-label">過去のデータは以下のリンクから閲覧可能です。</span>
  <form action="https://camera.hkose.com/showDailyPicts.php" method="post"
-      <label><h2>１号機日付別定時撮影データ閲覧</h2> 表示したい日付を指定：</label>
+      <label><h3>１号機日付別定時撮影データ閲覧</h3> 表示したい日付を指定：</label>
     <input name="showdate" id="datepicker" type="text" />
     <input type="submit" name="display" value="写真表示"></form>
  <script>
@@ -115,10 +121,9 @@ font-size:140%;
 収録写真を閲覧します。日にちを指定して過去の写真も確認できます。
 1日分の撮影済み写真が一覧できます。<br>
 
-<h2><a 
-href="https://camera.hkose.com/dailySlideShow_v7.php">【2020年版-1号機】かわごえ里山スライドショー＊＊再開テスト中＊＊</a><p>
-<a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/seasonShots/dailySlideShow_v7.php">【2018年版-２号機】かわごえ里山耕福米-成長記録スライドショー-New!!</a><p></h2>
-
+<h3>
+  <a href="https://camera.hkose.com/dailySlideShow_v7.php">【1号機の過去分】かわごえ里山-１号機のスライドショー</a><p>
+</h3>
 </div>
 
 
