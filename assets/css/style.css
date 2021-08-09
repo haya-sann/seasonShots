@@ -130,7 +130,6 @@ div.slideshow .loading .d {
   border-top:8px solid transparent;
   border-left:8px solid #c72439;
 }
-
 #button_magnifier:hover .tooltips {
   display: block;
 }
