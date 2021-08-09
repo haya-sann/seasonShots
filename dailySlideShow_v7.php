@@ -55,7 +55,7 @@
             <div id="button_start"></div>
 
             <div id="timeStamp">［タイムスタンプ表示エリア］</div><br/>
-            <div id="button_magnifier"></div>
+            <div id="button_magnifier"><span class="tooltips">この画像を高精細表示!!</span></div>
           </div>
           <div class="loading">
             <div class="dot a"></div>

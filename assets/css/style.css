@@ -107,6 +107,34 @@ div.slideshow .loading .d {
   cursor:pointer;
   vertical-align: middle;
 }
+#button_magnifier:hover {
+  display: transparent;
+}
+.tooltips {
+  display: none;
+  position: absolute;
+  bottom: -2.5em;
+  z-index: 1000;
+  padding: 0.5em;
+  color: #FFFFFF;
+  background: #cc3333;
+  border-radius: 0.5em;
+}
+.tooltips:after {
+  width: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0.5em;
+  top: -8px;
+  border-top:8px solid transparent;
+  border-left:8px solid #c72439;
+}
+
+#button_magnifier:hover .tooltips {
+  display: block;
+}
+
 #button_start.stop {
   background-image:url('../img/stop.png');
 }
