@@ -101,7 +101,8 @@ font-size:140%;
 <a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/seasonShots/dailySlideShow_v7.php">【2022年版-２号機】かわごえ里山耕福米-成長記録スライドショー-New!!</a>
 <p></h2>
 スライドショーの写真は高速化のため荒くしてあります。<br>
-細部を見るためには［虫眼鏡］アイコンをクリックしてください。<p>
+細部を見るためには［虫眼鏡］アイコンをクリックしてください。
+</div>
 
 <span class="small-label">過去のデータは以下のリンクから閲覧可能です。</span>
  <form action="https://camera.hkose.com/showDailyPicts.php" method="post"
@@ -125,7 +126,6 @@ font-size:140%;
 <h3>
   <a href="https://camera.hkose.com/dailySlideShow_v7.php">【1号機の過去分】かわごえ里山-１号機のスライドショー</a><p>
 </h3>
-</div>
 ※１号機は2019年10月の台風19号（令和元年東日本台風）にともなう洪水で冠水、修復中。
 
 
