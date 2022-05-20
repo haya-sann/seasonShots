@@ -76,7 +76,7 @@ font-size:140%;
 <tr>
   <div class = "tableTitle_1" id = 
 "top_title"><p><h2>「東洋大学情報総合学部・かわごえ里山イニシアチブ」<br>太陽電池駆動IoTによる田んぼウオッチ協働プロジェクト</></div>
-   かわごえ福田のみんなの田んぼ。一緒に見守ってください。</p>
+   かわごえ福田のみんなの田んぼ。一緒に見守ってください。（2022/05/20 更新）</p>
 <div class = "titleImage" >
 <td><a href="img/riceField.jpg"><img src="img/riceField.jpg" height =140 alt=""></td>
 <td><a href="img/solarCamera.jpg "><img src="img/solarCamera.jpg" height =140 alt=""></a></td>
@@ -86,8 +86,8 @@ font-size:140%;
 </tr> </table>
 
 
-<h2>【お知らせー2021/08/01】2号機再稼働始めました</h2>
-<h4>１号機は2019年10月の台風19号（令和元年東日本台風）にともなう洪水で冠水、修復中。２号機は水深計などを追加しました。</h4>
+<h2>【お知らせー2022/05/20】2号機再稼働始めました</h2>
+<h4>２号機は水深計などが追加されています。</h4>
 
 <div class="notice-border" >
 <span class="small-label">【2号機の新機能】現地の気象データに水田の水深が表示されるようになりました</span><p>
@@ -97,7 +97,7 @@ font-size:140%;
 現地の気象データグラフ表示</a> 
 <p>
   <h2>
-<a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/seasonShots/dailySlideShow_v7.php">【2021年版-２号機】かわごえ里山耕福米-成長記録スライドショー-New!!</a>
+<a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/seasonShots/dailySlideShow_v7.php">【2022年版-２号機】かわごえ里山耕福米-成長記録スライドショー-New!!</a>
 <p></h2>
 スライドショーの写真は高速化のため荒くしてあります。<br>
 細部を見るためには［虫眼鏡］アイコンをクリックしてください。<p>
@@ -125,7 +125,7 @@ font-size:140%;
   <a href="https://camera.hkose.com/dailySlideShow_v7.php">【1号機の過去分】かわごえ里山-１号機のスライドショー</a><p>
 </h3>
 </div>
-
+※１号機は2019年10月の台風19号（令和元年東日本台風）にともなう洪水で冠水、修復中。
 
 
 <p>
@@ -140,29 +140,6 @@ font-size:140%;
 画面下にあるスライダーを左右に動かして、再生速度を変えてください｡300ミリ秒から2000ミリ秒まで指定できます。再生中に操作すると表示速度がリアルタイムに変化します。</p>
 
 <img src="./img/instructions.jpg" style="max-width:98%;" />
-
-<br><br>
-
-<form action="https://camera.hkose.com/showCapturedPicts.php" method="post"
-      <label><h2>１号機：電源投入時テスト撮影</h2> 表示したい日付を指定：</label>
-    <input name="showdate" id="datepicker2" type="text" />
-    <input type="submit" name="display" value="写真表示"></form>
-
-<script>
-      (function(){
-  $('#datepicker2').datepicker({
-    dateFormat: 'yymmdd',
-    monthNames: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
-    dayNames: ['日', '月', '火', '水', '木', '金', '土'],
-    dayNamesMin: ['日', '月', '火', '水', '木', '金', '土']
-  });
-})();
-    </script>
-
-<p>電源投入時点のテスト映像を確認します。日にちを指定して、過去のデータも確認できます。<br>
-  5時から19時までの営業時間内に電源投入、次回の撮影時（正時）までに8分以上間隔があれば、テスト撮影します。<br>
-  7分以内であれば、正時の撮影時間を待ちます。
-</>
 
 <br><br>
     お気付きの不都合などがありましたら、<br>
