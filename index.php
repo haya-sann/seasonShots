@@ -5,7 +5,7 @@
 <head>
 <meta charset='utf-8'>
 
-<meta name = "viewport" content="width = 900">
+<meta name = "viewport" content="width = 1200">
 <style>
   .tableTitle_1 {
 font-size:140%;
@@ -67,7 +67,7 @@ font-size:140%;
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
-<title>かわごえプロジェクト　総合ページ</title>
+<title>市村プロジェクト　総合ページ</title>
 
 </head>
 <body onload="pDate()">
@@ -75,63 +75,39 @@ font-size:140%;
 <table  class = "imageHeader">
 <tr>
   <div class = "tableTitle_1" id = 
-"top_title"><p><h2>「東洋大学情報総合学部・かわごえ里山イニシアチブ」<br>太陽電池駆動IoTによる田んぼウオッチ協働プロジェクト</></div>
-   かわごえ福田のみんなの田んぼ。一緒に見守ってください。（2022/05/20 更新）</p>
+"top_title"><p><h2>「市村プロジェクトー四万十清流米ウオッチ」<br><span style="color:red">市村さん、このページに使えるデータ下さい</span><br>太陽電池駆動IoTによる田んぼウオッチ</></div>
+   市村の田んぼ。一緒に見守ってください。（今日更新）</p>
 <div class = "titleImage" >
-<td><a href="img/riceField.jpg"><img src="img/riceField.jpg" height =140 alt=""></td>
-<td><a href="img/solarCamera.jpg "><img src="img/solarCamera.jpg" height =140 alt=""></a></td>
-<td><a href="img/install_system.jpg"><img src="img/install_system.jpg" height =140 alt=""></td>
-<td><a href="img/koufukumai.jpg"><img src="img/koufukumai.jpg" height =140 alt=""></td>
-<td><a href="img/raspCam.jpg"><img src="img/raspCam.jpg" height =140 alt=""></td></div>
+<td><a href="img/市村田んぼ.jpg"><img src="img/riceField.jpg" height =140 alt=""></td>
+<td><a href="img/市村稲刈り.jpg "><img src="img/市村田んぼ.jpg" height =140 alt=""></a></td>
+<td><a href="img/市村マコモ.jpg"><img src="img/市村マコモ.jpg" height =140 alt=""></td>
+<td><a href="img/tanaka_Panorama.jpg"><img src="img/tanaka_Panorama.jpg" height =140 alt=""></td>
+<td><a href="img/solarCamera_1.jpg"><img src="img/solarCamera_1.jpg" height =140 alt=""></td></div>
 </tr> </table>
 
 
-<h2>【お知らせー2022/05/20】
-<span style="color:red">2号機再稼働始めました</span> </h2>
-<h4>１号機は2019年10月の台風19号（令和元年東日本台風）にともなう洪水で冠水、修復中。２号機は水深計などを追加しました。</h4>
+<h2>【お知らせー2023/0X/XX】
+<span style="color:red">市村初号機稼働始めました・ついに田んぼの毎日がお部屋でチェックできる</span> </h2>
 
 <div class="notice-border" >
-<span class="small-label">【2号機の新機能】現地の気象データに水田の水深が表示されるようになりました</span><p>
-<a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/IM/index.html">現地の気象データ</a>　／　
+<span class="small-label">【初号機の新機能】現地の気象データ、現地の様子がタイムラプスで見える</span><p>
+<a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/IM_Ichimura/index.html">現地の気象データ</a>　／　
 
-<a href="https://ambidata.io/bd/board.html?id=26890">
+<a href="https://ambidata.io/bd/board.html?id=58764">
 現地の気象データグラフ表示</a> 
 <p>
   <h2>
-<a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/seasonShots/dailySlideShow_v7.php">【2022年版-２号機】かわごえ里山耕福米-成長記録スライドショー-New!!</a>
+<a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/IM_Ichimura/seasonShots/dailySlideShow_v7.php">【2023年版-初号機】市村無農薬四万十清流米-成長記録スライドショー-New!!</a>
 <p></h2>
 スライドショーの写真は高速化のため荒くしてあります。<br>
 細部を見るためには［虫眼鏡］アイコンをクリックしてください。
 </div>
-
-<span class="small-label">過去のデータは以下のリンクから閲覧可能です。</span>
- <form action="https://camera.hkose.com/showDailyPicts.php" method="post"
-      <label><h3>１号機日付別定時撮影データ閲覧</h3> 表示したい日付を指定：</label>
-    <input name="showdate" id="datepicker" type="text" />
-    <input type="submit" name="display" value="写真表示"></form>
- <script>
-      (function(){
-  $("#datepicker").datepicker({
-    dateFormat: 'yymmdd',
-    monthNames: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
-    dayNames: ['日', '月', '火', '水', '木', '金', '土'],
-    dayNamesMin: ['日', '月', '火', '水', '木', '金', '土']
-  });
-})();
-    </script>
-
-収録写真を閲覧します。日にちを指定して過去の写真も確認できます。
-1日分の撮影済み写真が一覧できます。<br>
-
-<h3>
-  <a href="https://camera.hkose.com/dailySlideShow_v7.php">【1号機の過去分】かわごえ里山-１号機のスライドショー</a><p>
-</h3>
-※１号機は2019年10月の台風19号（令和元年東日本台風）にともなう洪水で冠水、修復中。
-
-
 <p>
-    
-2016年8月18日から撮影し続けた写真をスライドショーで閲覧します。<br>表示方法を工夫し、現在はバージョン７のブラウザが動作しています｡
+<span class="small-label">四万十清流米のふるさとはこちら</span><p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3340.087917660204!2d132.69722051254624!3d33.15931867339587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354f67d250c3306f%3A0xc4ef22fd655f8d59!2z44CSNzk4LTIxMDYg5oSb5aqb55yM5YyX5a6H5ZKM6YOh5p2-6YeO55S655uu6buS77yR77yV77yY77yQ!5e0!3m2!1sja!2sjp!4v1681807190756!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<p>
+
+2023年5月ＸＸ日から撮影し続けた写真をスライドショーで閲覧します。<br>表示方法を工夫し、現在はバージョン７のブラウザが動作しています｡
   </>
 <p>
 スライドショーを開くと、最新の1日分をスライド表示できます。下部のスライドバーで表示開始日・最終日を指定してします。指定の日付から最終日まで同一時刻の写真を「横切り」タイムラプス画像を確認することができます。</p>
@@ -140,11 +116,11 @@ font-size:140%;
 <p>モバイル通信ネットワークなど、スピードが遅い環境で使っていると写真の表示が追いつかず、撮影時刻表示と同期しないという不都合がおきることがあります｡画像の送出間隔を変更できるようにしてありますので、お使いください。<br>
 画面下にあるスライダーを左右に動かして、再生速度を変えてください｡300ミリ秒から2000ミリ秒まで指定できます。再生中に操作すると表示速度がリアルタイムに変化します。</p>
 
-<img src="./img/instructions.jpg" style="max-width:98%;" />
+<img src="img/instructions.jpg" style="max-width:98%;" />
 
 <br><br>
     お気付きの不都合などがありましたら、<br>
-    <a href="mailto:tamboiot@googlegroups.com">tamboiot@googlegroups.com</a> <br>
+    <a href="mailto:xxx@xxx.jp">xxx@xxx.jp</a> <br>
     にメールをお送りください｡<br>
   </>
 </body>
