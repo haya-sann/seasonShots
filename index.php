@@ -91,13 +91,13 @@ font-size:140%;
 
 <div class="notice-border" >
 <span class="small-label">【初号機の新機能】現地の気象データ、現地の様子がタイムラプスで見える</span><p>
-<a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/IM_Ichimura/index.html">現地の気象データ</a>　／　
+<a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/IchimuraProject/IM_Ichimura/index.html">現地の気象データ</a>　／　
 
 <a href="https://ambidata.io/bd/board.html?id=58764">
 現地の気象データグラフ表示</a> 
 <p>
   <h2>
-<a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/IM_Ichimura/seasonShots/dailySlideShow_v7.php">【2023年版-初号機】市村無農薬四万十清流米-成長記録スライドショー-New!!</a>
+<a href="https://ciao-kawagoesatoyama.ssl-lolipop.jp/IchimuraProject/IM_Ichimura/seasonShots/dailySlideShow_v7.php">【2023年版-初号機】市村無農薬四万十清流米-成長記録スライドショー-New!!</a>
 <p></h2>
 スライドショーの写真は高速化のため荒くしてあります。<br>
 細部を見るためには［虫眼鏡］アイコンをクリックしてください。
