@@ -6,4 +6,4 @@
   $largedir = $photo_dir . '_lg/';
   $meddir = $photo_dir . '_md/';
   $thumbdir = $photo_dir . '_sm/';
-  
+?>
