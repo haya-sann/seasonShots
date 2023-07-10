@@ -32,12 +32,13 @@ function init(arg_data){
 
     var beginning_of_today_timestamp = new Date(end_timestamp.getDateString());
     filteredList = fileList.filterByStartTimestamp(beginning_of_today_timestamp);
-    currentIndex = filteredList[0].index;
+    currentIndex = filteredList[filteredList.length-1].index;
     console.log("Today's photos: ", filteredList);
 
     $("input[name=showDate]").val(end_timestamp.getFullYear() + "/" + (end_timestamp.getMonth()+1) + "/" + end_timestamp.getDate());
 
-    $("#slider").slider( "option", "max", totalFrames );
+    $("#slider").slider( "option", { max:totalFrames, value:totalFrames } );
+    $("#slider .ui-slider-handle").css({left:"100%"});
     $("#slider-range").slider( "option", "max", totalFrames );
     setSliderRange();
 
